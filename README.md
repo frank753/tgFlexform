@@ -1,5 +1,4 @@
- [comment]: <> (Home)
- <!--- Comments are Fun --->
+ <!--- Home --->
 # tgFlexform
 a [jQuery](http://jquery.com/)-plugin that creates flexible forms from HTML and handle them
 
@@ -34,7 +33,7 @@ $('#myDivContainer').tgFlexform(options, "runme", "parameter");
 ```
 ### Basics
 ##### a little bit background
-* <div> and <p> -tags devides your form in logical groups
+* &lt; div &gt; and &lt; p &gt; tags devides your form in logical groups
 * use the "data-tgflexform" attribute in your tag definition to infiltrate individual properties to your controls and groups
 * properties are inherited to sub elements
 * at first running, the plugin parse your form container and creates a div-based table depending from the detected logical groups and the element properties
@@ -42,10 +41,25 @@ $('#myDivContainer').tgFlexform(options, "runme", "parameter");
 ### API
 
 ##### - options
-- control the whole plugin, changeable during design and runtime 
- 
-| records | Array of Objects | `[{}, {}]` `[]` | the data-Array | 
+- control the whole plugin, changeable during design and runtime
 
+_records_
+*Array of Objects*
+>`[{}, {}]` >
+
+
+Name | Type | Values | Default | Description
+------------ | ------------- | ------------- | ------------- | -------------
+| records |  |  | `[]` | the data-Array |
+
+
+''''js
+var data = [{firstname: "Martin", lastname: "Bishop"}, {firstname: "Robert", lastname: "Redford"}]; $("#mytgFlex").tgFlexform({records:data});
+''''
+
+Name | Type | Values | Default | Description
+------------ | ------------- | ------------- | ------------- | -------------
+| records | Array of Objects | `[{}, {}]` | `[]` | the data-Array |
 #### - properties
 handle the view and the behaviour of controls and groups, changeable only during design or with methods at runtime
 
