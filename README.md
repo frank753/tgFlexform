@@ -7,7 +7,9 @@ create forms from your HTML-code that try to optimal use of available space.
 * provides directly html5 form elements
 * provides by easy programmable interface to other extandabled form elements like jqueryUI or jqxWidgets
 * provide single data records and multi data records
-<h1>test</h1>
+
+please visit my [homepage](https://frank753.uber.space/tgDoc/tgFlexform/) for detailed information
+
 ### minimal requierements
 * jquery 
 * your form elements placed in a div-container
