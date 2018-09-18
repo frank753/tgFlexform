@@ -7,7 +7,7 @@ create forms from your HTML-code that try to optimal use of available space.
 * provides directly html5 form elements
 * provides by easy programmable interface to other extandabled form elements like jqueryUI or jqxWidgets
 * provide single data records and multi data records
-<div>test</div>
+<div style="color:red">test</div>
 ### minimal requierements
 * jquery 
 * your form elements placed in a div-container
