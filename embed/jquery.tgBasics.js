@@ -1,0 +1,1 @@
+/var/www/html/js-develop/jquery.Plugins/jquery.tgBasics_02.js

@@ -1,0 +1,36 @@
+{
+  "name": "tgflexform",
+  "version": "0.2.0",
+  "description": " a jquery-plugin that creates flexible forms from minimal HTML and handle them",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://frank753@github.com/frank753/tgFlexform.git"
+  },
+  "keywords": [
+    "jquery",
+    "HTML",
+    "Forms"
+  ],
+  "author": "frank753 (frank753@uber.space)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frank753/tgFlexform/issues"
+  },
+  "homepage": "https://github.com/frank753/tgFlexform#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-recursive-folder": "^0.9.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-zip": "^4.2.0",
+    "gulp4": "^4.0.2",
+    "hoek": "^5.0.4",
+    "path": "^0.12.7",
+    "pump": "^3.0.0"
+  }
+}
