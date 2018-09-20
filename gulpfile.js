@@ -41,23 +41,6 @@ gulp.task('cleanAfterBuild', function ()
 				pluginOptions.tmp
 				]);
 	});
-
-
-
-
-
-
-
-	
-gulp.task('compress', function (cb) {
-  pump([
-        gulp.src('src/jquery.tgFlexform/*.js'),
-        uglify(),
-        gulp.dest('bunch')
-    ],
-    cb
-  );
-});
  
 gulp.task('minify:jqueryPlugin', recursiveFolder(
 												{
@@ -95,7 +78,7 @@ gulp.task('copy:jqueryPluginAdds', recursiveFolder(
 														.pipe(gulp.dest(pluginOptions.tmp + "/" + folderFound.pathTarget));
 													}
 												));
-gulp.task('copy:Readme', function()
+gulp.task('copy:Files', function()
 							{
 							return gulp.src(["./README*", "./LICENSE*" ])
 										.pipe(gulp.dest(pluginOptions.tmp));
@@ -106,7 +89,7 @@ gulp.task('zip', () =>
         .pipe(gulp.dest(pluginOptions.target))
 );										
 
-gulp.task('default', gulp.series('clean:dist',gulp.parallel("minify:jqueryPlugin", 'minify:jqueryPluginAddsJS', 'copy:jqueryPluginAdds', 'copy:Readme'), "zip", "cleanAfterBuild"
+gulp.task('default', gulp.series('clean:dist',gulp.parallel("minify:jqueryPlugin", 'minify:jqueryPluginAddsJS', 'copy:jqueryPluginAdds', 'copy:Files'), "zip", "cleanAfterBuild"
 		
 		));
 
